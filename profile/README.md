@@ -50,13 +50,40 @@ down with real confidence.
 The metrics are approximations built from published research, not medical-grade
 measurements. Nothing here is a diagnosis.
 
-### Support the work
+### The people who built it
 
-This is free, MIT-licensed, and has nothing behind it. If it gave your band a second life
-and you want to chip in:
+<a href="https://github.com/OpenStrap/edge/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OpenStrap/edge" alt="Contributors" />
+</a>
 
-- **BTC** — `bc1qvtcch38dcwp967ar764uu6eetw7tf907844wfq`
-- **EVM** (ETH / Base / Arbitrum / Polygon) — `0x8310C89393366b7eBCD47ABa82e1dfB5ECeFFbD9`
+Mostly by wearing it on a real wrist and reporting what came out wrong — which is
+genuinely the most useful thing anyone can do here, since there's one person's
+physiology in the test data otherwise.
+
+---
+
+<div align="center">
+
+### ☕ Like it? Help keep it going.
+
+**No subscription, no paywall, no company behind this.**<br>
+If OpenStrap gave your band a second life, a small tip genuinely helps.
+
+**Bitcoin**
+
+`bc1qvtcch38dcwp967ar764uu6eetw7tf907844wfq`
+
+**EVM** — Ethereum · Base · Arbitrum · Optimism · Polygon
+
+`0x8310C89393366b7eBCD47ABa82e1dfB5ECeFFbD9`
+
+[**What donations actually pay for →**](https://github.com/OpenStrap/edge/blob/main/DONATE.md)
+
+*Nothing is gated behind paying, and nothing ever will be.*
+
+</div>
+
+---
 
 Not affiliated with, endorsed by, or connected to WHOOP. "WHOOP" is their trademark, used
 only to say which device this talks to. MIT licensed.
