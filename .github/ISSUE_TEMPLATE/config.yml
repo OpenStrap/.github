@@ -1,0 +1,29 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Bug or wrong metric in the app
+    url: https://github.com/OpenStrap/edge/issues/new/choose
+    about: >-
+      Anything you see in the app belongs in the edge repo, which has forms for
+      bugs and for metrics that look wrong.
+
+  - name: Protocol / byte-level finding
+    url: https://github.com/OpenStrap/protocol/issues/new
+    about: >-
+      A new record type, opcode, event, or a field decoded wrongly. Include the
+      raw bytes and how you convinced yourself.
+
+  - name: A new metric, or how one is computed
+    url: https://github.com/OpenStrap/analytics/issues/new
+    about: >-
+      The math lives in the analytics repo. Open it there if you're proposing a
+      method rather than reporting an app bug.
+
+  - name: Questions and general discussion
+    url: https://github.com/OpenStrap/edge/discussions
+    about: Not sure whether something's a bug? Start here.
+
+  - name: Report a security vulnerability (private)
+    url: https://github.com/OpenStrap/edge/security/advisories/new
+    about: >-
+      Please don't open a public issue for a security problem. See SECURITY.md
+      for what's in scope.
