@@ -3,7 +3,7 @@
 # OpenStrap
 
 Your WHOOP band doesn't stop working when the subscription does — the app just goes
-dark. OpenStrap is what I built so a 4.0 band that would otherwise sit in a drawer keeps
+dark. OpenStrap is what I built so a band that would otherwise sit in a drawer keeps
 doing something: read your own data off it over Bluetooth, keep the raw bytes, and turn
 them into the numbers you actually look at.
 
@@ -16,8 +16,9 @@ Is it a replacement for WHOOP? No, and I'm not going to pretend it is. They've g
 of research and a whole team; this is one person and textbook methods. But it's a real
 second life for hardware you already own, and your data stays yours.
 
-Tested on WHOOP 4.0 only. Once you start using it, don't reconnect the band to the
-official WHOOP app — a firmware update could change or break the events this relies on.
+Works with WHOOP 4.0, 5, and MG. 4.0 gets the most daily wear-testing since that's what's
+on my wrist. Once you start using it, don't reconnect the band to the official WHOOP
+app — a firmware update could change or break the events this relies on.
 
 ### Get the app
 
@@ -28,17 +29,24 @@ official WHOOP app — a firmware update could change or break the events this r
 
 - **[edge](https://github.com/OpenStrap/edge)** — the phone app, and where everything
   actually happens: Bluetooth, local storage, the compute pipeline, every screen.
-- **[protocol](https://github.com/OpenStrap/protocol)** — the decoders. Raw WHOOP 4.0
-  record bytes into named fields. Pure Dart, zero dependencies, runs on-device.
+- **[protocol](https://github.com/OpenStrap/protocol)** — the decoders. Raw WHOOP record
+  bytes into named fields. Pure Dart, zero dependencies, runs on-device.
 - **[analytics](https://github.com/OpenStrap/analytics)** — the math. Published,
   peer-reviewed methods (Banister TRIMP, Cole-Kripke, Lomb-Scargle and friends) turn heart
   rate and motion into metrics — each carrying its own confidence and tier, and returning
   nothing rather than guessing when the data isn't there.
+- **[icons](https://github.com/OpenStrap/icons)** — the illustrated icon set the app
+  ships with, as a standalone Flutter package.
 - **[research](https://github.com/OpenStrap/research)** — the lab notebook. The protocol
   written down, plus a one-file Python client so you can talk to a band from a terminal.
 - **[backend](https://github.com/OpenStrap/backend)** — *optional, and not required.* A
   small self-hostable companion for importing an old cloud account and for opt-in
   telemetry. The app doesn't need it and doesn't use it by default.
+
+### Talk to us
+
+[Discord](https://discord.gg/dUXds5MWkd) — questions, bug reports, band-specific
+weirdness, protocol reverse-engineering discussion.
 
 ### A few honest notes
 
