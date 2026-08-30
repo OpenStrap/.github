@@ -2,10 +2,10 @@
 
 # OpenStrap
 
-Your WHOOP band doesn't stop working when the subscription does — the app just goes
-dark. OpenStrap is what I built so a band that would otherwise sit in a drawer keeps
-doing something: read your own data off it over Bluetooth, keep the raw bytes, and turn
-them into the numbers you actually look at.
+Your wearable doesn't stop working when the subscription does — the app just goes dark.
+OpenStrap is what I built so a strap that would otherwise sit in a drawer keeps doing
+something: read your own data off it over Bluetooth, keep the raw bytes, and turn them
+into the numbers you actually look at.
 
 **Everything runs on your phone.** The band talks to the app over Bluetooth, the app
 decodes the bytes, computes the metrics, and stores the results locally. There's no
@@ -16,9 +16,17 @@ Is it a replacement for WHOOP? No, and I'm not going to pretend it is. They've g
 of research and a whole team; this is one person and textbook methods. But it's a real
 second life for hardware you already own, and your data stays yours.
 
-Works with WHOOP 4.0, 5, and MG. 4.0 gets the most daily wear-testing since that's what's
-on my wrist. Once you start using it, don't reconnect the band to the official WHOOP
-app — a firmware update could change or break the events this relies on.
+### Supports
+
+- **WHOOP 4, WHOOP 5, MG** — full support: sleep, recovery, strain, everything computed
+  on-device. 4.0 gets the most daily wear-testing since that's what's on my wrist.
+- **Any standard Bluetooth heart-rate strap** — pairs for workout tracking today. Full
+  metrics from it are on the roadmap, not shipped yet.
+- **Oura Ring** — protocol groundwork is in the codebase; not pairable in the app yet.
+
+WHOOP is the one with a subscription to route around, so once you start using this on a
+WHOOP band, don't reconnect it to the official WHOOP app — a firmware update could change
+or break the events this relies on.
 
 ### Get the app
 
