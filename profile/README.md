@@ -9,8 +9,8 @@ into the numbers you actually look at.
 
 **Everything runs on your phone.** The band talks to the app over Bluetooth, the app
 decodes the bytes, computes the metrics, and stores the results locally. There's no
-account, no cloud, and no server that ever sees your raw data. That isn't a privacy
-setting you switch on — it's the architecture.
+account and no cloud, and no server sees your health data unless you opt in to send it
+somewhere yourself. That isn't a privacy setting you switch on — it's the architecture.
 
 Is it a replacement for WHOOP? No, and I'm not going to pretend it is. They've got years
 of research and a whole team; this is one person and textbook methods. But it's a real
@@ -22,7 +22,12 @@ second life for hardware you already own, and your data stays yours.
   on-device. 4.0 gets the most daily wear-testing since that's what's on my wrist.
 - **Any standard Bluetooth heart-rate strap** — pairs for workout tracking today. Full
   metrics from it are on the roadmap, not shipped yet.
-- **Oura Ring** — protocol groundwork is in the codebase; not pairable in the app yet.
+- **Oura Ring** — experimental. Pairs using the key the ring already holds (no factory
+  reset, the Oura app keeps working) and syncs its history. Not feeding any scores yet.
+
+A few other watches and rings show up in the app as **Experimental**: decoded, never
+tested on real hardware, and kept out of every metric until someone confirms them on
+a real device. More wearables are in development.
 
 WHOOP is the one with a subscription to route around, so once you start using this on a
 WHOOP band, don't reconnect it to the official WHOOP app — a firmware update could change
@@ -32,13 +37,14 @@ or break the events this relies on.
 
 - **iOS** — [join the TestFlight beta →](https://testflight.apple.com/join/2BVSwq65)
 - **Android** — [download the APK →](https://github.com/OpenStrap/edge/releases/latest)
+- **F-Droid** — not listed yet. A build recipe is drafted but hasn't been submitted.
 
 ### The pieces
 
 - **[edge](https://github.com/OpenStrap/edge)** — the phone app, and where everything
   actually happens: Bluetooth, local storage, the compute pipeline, every screen.
-- **[protocol](https://github.com/OpenStrap/protocol)** — the decoders. Raw WHOOP record
-  bytes into named fields. Pure Dart, zero dependencies, runs on-device.
+- **[protocol](https://github.com/OpenStrap/protocol)** — the decoders. Raw record bytes
+  from WHOOP bands, Bluetooth HR straps and the Oura ring into named fields. Pure Dart, zero dependencies, runs on-device.
 - **[analytics](https://github.com/OpenStrap/analytics)** — the math. Published,
   peer-reviewed methods (Banister TRIMP, Cole-Kripke, Lomb-Scargle and friends) turn heart
   rate and motion into metrics — each carrying its own confidence and tier, and returning
