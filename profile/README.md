@@ -9,8 +9,10 @@ into the numbers you actually look at.
 
 **Everything runs on your phone.** The band talks to the app over Bluetooth, the app
 decodes the bytes, computes the metrics, and stores the results locally. There's no
-account and no cloud, and no server sees your health data unless you opt in to send it
-somewhere yourself. That isn't a privacy setting you switch on — it's the architecture.
+account, and no server sees your health data unless you opt in to send it somewhere
+yourself. That isn't a privacy setting you switch on; it's the architecture. Anonymous
+crash and performance diagnostics are the one optional extra: off by default, and
+they never include health data.
 
 Is it a replacement for WHOOP? No, and I'm not going to pretend it is. They've got years
 of research and a whole team; this is one person and textbook methods. But it's a real
@@ -37,7 +39,8 @@ or break the events this relies on.
 
 - **iOS** — [join the TestFlight beta →](https://testflight.apple.com/join/2BVSwq65)
 - **Android** — [download the APK →](https://github.com/OpenStrap/edge/releases/latest)
-- **F-Droid** — not listed yet. A build recipe is drafted but hasn't been submitted.
+- **F-Droid** — not listed yet. An inclusion request was opened and closed without
+  being merged.
 
 ### The pieces
 
