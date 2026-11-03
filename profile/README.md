@@ -1,4 +1,4 @@
-![OpenStrap](https://raw.githubusercontent.com/OpenStrap/.github/main/profile/banner.png)
+<img width="1280" height="640" alt="github 2" src="https://github.com/user-attachments/assets/483a5d29-b983-47dc-bd3a-12e47e70cd0c" />
 
 # OpenStrap
 
